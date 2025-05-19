@@ -1,0 +1,48 @@
+@import url(css/top.css);
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    background-color: #ffffff;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.esquerda{
+    font-size: 30px;
+}
+
+img.fundo_madeira {
+    width: 100%;
+    height: auto;
+}
+
+.logo{
+    position: absolute;
+    top: 12px;
+    left: 32px;
+    width: 87px;
+    height: auto;
+}
+
+.frase{
+    margin-top: -50%;    /* Move para baixo */
+    margin-left: 20px;   /* Move para a direita */
+    padding-bottom: 10px; /* Adiciona espaço interno abaixo */
+    font-size: 60px; /*aumenta a letra*/
+    word-break: break-word;
+    color: #ffffff;
+    background-color: black;
+}
