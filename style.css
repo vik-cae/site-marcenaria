@@ -8,15 +8,31 @@
 }
 
 body{
-    width: 100vw;
-    background-color: #ffffff;
+    width: 100%;
+    background-color: rgb(247, 247, 239);
+    
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
 }
 
 main{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    .foto{
+        width: 100%;
+        height: 30%;
+        /* position: relative; */
+        .texto{
+            position: absolute;
+            top: -30%;
+        }
+    }
 
 }
 
@@ -37,12 +53,90 @@ img.fundo_madeira {
     height: auto;
 }
 
+.top{
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: calc(25%);
+}
+
 .frase{
-    margin-top: -50%;    /* Move para baixo */
-    margin-left: 20px;   /* Move para a direita */
-    padding-bottom: 10px; /* Adiciona espaço interno abaixo */
-    font-size: 60px; /*aumenta a letra*/
-    word-break: break-word;
-    color: #ffffff;
-    background-color: black;
+
+    
+    font-size: 80px; /*aumenta a letra*/
+
+    font-family: serif;
+    color: white;
+    max-width: 100%; /* ajuste até a quebra ficar como na imagem */
+    line-height: 1.4;
+    text-align: center; 
+
+}
+
+.whats{
+    font-size: 25px; /*aumenta a letra*/
+   
+    background-color: rgb(75, 95, 66);
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: 'Inter', sans-serif;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 16px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+
+    gap: 10px;
+    justify-content: center;
+    padding: 2rem;
+
+    .icon{
+        color: white;
+        font-size: 30px;
+
+
+        bottom: 25%;
+        left: calc(40%);
+    }
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px; /* Espaçamento entre os itens */
+    
+    .cards{
+        background: #ccc;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        
+        img{
+
+            border-radius: 10px;
+            width: 250px;
+
+        }
+
+        .text-foto{
+            position: absolute;
+            bottom: 15%;
+            left: 36%;
+            color: #ffffff;
+        }
+    }
 }
