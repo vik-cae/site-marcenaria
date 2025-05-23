@@ -114,24 +114,32 @@ img.fundo_madeira {
     }
 }
 
+.portifolio{
+    padding: 1rem;
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 10px; /* Espaçamento entre os itens */
+    padding: 1rem;
     
     .cards{
-        background: #ccc;
+        /*background: #ccc;*/
         padding: 20px;
         text-align: center;
         position: relative;
         
         img{
-
             border-radius: 10px;
             width: 250px;
-
+            
+            
+            height: 90%; /* Preenche a altura da célula */
+            object-fit: cover; /* Redimensiona a imagem mantendo a proporção e cortando o excesso */
+            object-position: center; /* Centraliza a imagem */
+            display: block; /* Remove espaços indesejados */
         }
-
+        
         .text-foto{
             position: absolute;
             bottom: 15%;
